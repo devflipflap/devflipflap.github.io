@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLIPFLAP</title>
+<meta name="description" content="FLIPFLAP(플립플랩) - 모바일 애플리케이션 개발 및 운영">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+    --card: #f9fafb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #e8eaed;
+      --muted: #9aa0a6;
+      --line: #2a2e35;
+      --accent: #7aa2f7;
+      --card: #171a20;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                 "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 40px; }
+  h1 { font-size: 2.25rem; letter-spacing: 0.04em; margin: 0 0 6px; font-weight: 700; }
+  .sub { color: var(--muted); margin: 0; font-size: 1rem; }
+  h2 { font-size: 1.05rem; margin: 40px 0 14px; font-weight: 600; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0; padding-left: 1.1rem; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .info {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-top: 14px;
+  }
+  .row { display: flex; gap: 14px; padding: 7px 0; flex-wrap: wrap; }
+  .row + .row { border-top: 1px solid var(--line); }
+  .key { color: var(--muted); min-width: 120px; font-size: 0.92rem; }
+  .val { flex: 1; min-width: 200px; word-break: break-word; }
+  footer {
+    margin-top: 56px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>FLIPFLAP</h1>
+    <p class="sub">플립플랩 · 모바일 애플리케이션 개발 및 운영</p>
+  </header>
+
+  <h2>소개</h2>
+  <p>
+    FLIPFLAP(플립플랩)은 일상에 필요한 계산 도구와 모바일 게임을 만드는 1인 개발 스튜디오입니다.
+    Google Play를 통해 앱을 배포하고 운영하고 있습니다.
+  </p>
+
+  <h2>운영 중인 앱</h2>
+  <ul>
+    <li>주식 평단가 계산기</li>
+    <li>코인 평단가 계산기</li>
+    <li>간단연비 (연비 계산기)</li>
+    <li>신페리오 계산기</li>
+    <li>어둠의전설: 현자의마을</li>
+  </ul>
+
+  <h2>사업자 정보</h2>
+  <div class="info">
+    <div class="row"><span class="key">상호</span><span class="val">플립플랩 (FLIPFLAP)</span></div>
+    <div class="row"><span class="key">주소</span><span class="val">경기도 성남시 분당구 판교역로10번길 6, B1층 F09호</span></div>
+    <div class="row"><span class="key">문의</span><span class="val"><a href="mailto:devflipflap@gmail.com">devflipflap@gmail.com</a></span></div>
+  </div>
+
+  <footer>
+    © 2026 FLIPFLAP. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
